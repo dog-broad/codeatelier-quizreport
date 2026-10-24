@@ -25,8 +25,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'quiz_codeatelier';
-$plugin->version   = 2026060800;
+$plugin->version   = 2026060801;
 $plugin->requires  = 2024100100; // Moodle 4.5.
-$plugin->maturity  = MATURITY_ALPHA;
-$plugin->release   = '0.1.0';
-$plugin->dependencies = array('qtype_codeatelier' => ANY_VERSION);
+$plugin->maturity  = MATURITY_BETA;
+$plugin->release   = '1.0.0-beta';
+$plugin->supported = [405, 502];
+$plugin->dependencies = ['qtype_codeatelier' => ANY_VERSION];
